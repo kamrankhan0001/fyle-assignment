@@ -1,0 +1,210 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+#loader {
+    margin-top: 20px;
+}
+
+.repository {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-rows: auto auto;
+    
+}
+
+.repository .topics {
+    color: #333;
+}
+
+.pagination-btn {
+    cursor: pointer;
+}
+
+/* Style for pagination container */
+#pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style for pagination buttons */
+.pagination-btn {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Style for "Next Page" button */
+#pagination .next-page-btn {
+    margin-left: 10px;
+}
+
+/* Additional styling for button hover effect */
+.pagination-btn:hover,
+.next-page-btn:hover {
+    background-color: blue;
+    color: #ddd;
+}
+
+/* Style for pagination container */
+#pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style for pagination buttons */
+.pagination-btn {
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #3498db;
+    color: #3498db;
+}
+
+/* Style for "Next Page" button */
+#pagination .next-page-btn {
+    margin-left: 10px;
+}
+
+/* Additional styling for button hover effect */
+.pagination-btn:hover,
+.next-page-btn:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+/* Style for the container of repositories */
+#repositories {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr);    /* 2 rows */
+    gap: 10px; /* Gap between grid items */
+}
+
+/* Style for individual repository items */
+.repository {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    
+}
+
+/* Style for repository name */
+.repository h5 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    
+}
+
+/* Style for repository topics */
+.repository .topics {
+    font-size: 14px;
+    color: #555;
+}
+#user-info {
+    text-align: left;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 60px;
+    font-weight: bold;
+    
+    
+    
+}
+
+
+
+/* Style for user profile picture */
+#profile-picture {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Style for user details (name, location, twitter) */
+#user-details {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    color: #ddd;
+   
+    
+}
+
+
+.pagination {
+    display: inline-block;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.pagination {
+    display: inline-block;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+
+
+
+
+
+.pagination {
+    display: inline-block;
+  }
+
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+  }
+
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+  }
+
+  .pagination a:hover:not(.active) {
+    background-color: green;
+  }
+
+  .pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+
+  .pagination a{
+    color: white;
+    
+    
+  }
+
+  .adjustment{
+    margin-top: 30px;
+   
+  }
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Viewer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4">GitHub Repository Viewer</h1>
+
+
+    <div id="user-info">
+        <img id="profile-picture" src="" alt="Picture">
+        
+        
+        <div id="user-details"></div>
+    </div>
+
+    <div class="form-row mb-3">
+
+        <div class="col-6">
+            <input type="text" class="form-control" id="usernameInput" placeholder="Enter GitHub Username">
+        </div>
+        <div class="col-3">
+            <select class="form-control" id="reposPerPage">
+                <option value="10">10 per page</option>
+                <option value="30">30 per page</option>
+                <option value="50">50 per page</option>
+                <option value="100">100 per page</option>
+            </select>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-primary" onclick="fetchRepositories()">Search Repositories</button>
+        </div>
+    </div>
+
+    <div id="loader" class="text-center d-none">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <div id="repositories"></div>
+    <div id="repositories"></div>
+
+    <div id="pagination" class="text-center mt-4"></div>
+    <div class="pagination" id="pagination">
+        <a href="#" onclick="previousPage()">&laquo;</a>
+        <a href="#" onclick="changePage(1)">1</a>
+        <a class="active" href="#" onclick="changePage(2)">2</a>
+        <a href="#" onclick="changePage(3)">3</a>
+        <a href="#" onclick="changePage(4)">4</a>
+        <a href="#" onclick="changePage(5)">5</a>
+        <a href="#" onclick="changePage(6)">6</a>
+        <a href="#" onclick="changePage(7)">7</a>
+        <a href="#" onclick="changePage(8)">8</a>
+        <a href="#" onclick="changePage(9)">9</a>
+        <a href="#" onclick="nextPage()">&raquo;</a>
+      </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
